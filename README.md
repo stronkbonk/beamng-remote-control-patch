@@ -44,6 +44,8 @@ Its signed, targets Android 15, and needs Android 6.0 or newer. If you already h
 
 getting a connection timeout? tap the "enter pc ip manually" link, type your PCs ip from ipconfig, and scan the qr again. that bypasses broadcast entirely.
 
+If that still doesn't work check if BeamNG is allowed thru your computers firewall.
+
 ## Build it yourself
 
 needs JDK 17 and the android sdk (platform 35).
