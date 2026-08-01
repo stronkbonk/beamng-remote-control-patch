@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.beamng.udpsteering.ManualIpActivity">
+
+    <TextView
+        android:id="@+id/manualTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Enter the IP address of the PC running BeamNG.drive"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/ipInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manualTitle"
+        android:layout_marginTop="20dp"
+        android:hint="e.g. 192.168.1.80"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ipInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="onNextClick"
+        android:text="Scan QR Code" />
+
+    <TextView
+        android:id="@+id/manualHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nextButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="If the automatic search times out, type the PC's local IP here.\nYou still need to scan the QR code so the app knows the security code.\nFind the PC's IP by running &quot;ipconfig&quot; on Windows (IPv4 Address)."
+        android:textSize="13sp" />
+
+</RelativeLayout>
